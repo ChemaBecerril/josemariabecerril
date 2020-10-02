@@ -4,7 +4,7 @@ import Layout from '../components/layout'
 
 import me from '../assets/images/me_in_berlin.jpg'
 import cv from '../assets/documents/CV-Becerril-English.pdf'
-
+//import favicon from '../assets/images/fa
 const Generic = (props) => (
     <Layout>
         <Helmet>

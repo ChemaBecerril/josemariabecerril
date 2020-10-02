@@ -74,7 +74,7 @@ const Landing = (props) => (
                     <div className="content">
                         <div className="inner">
                             <header className="major">
-                                <h3>Vivir enun barrio neoliberal</h3>
+                                <h3>Vivir en un barrio neoliberal</h3>
                                 <h4>Revalorización excluyente, fantasmagoría y esterilización de la resistencia <br/>en la colonia Juárez, Ciudad de México</h4>
                             </header>
                             <p>En  la  actual  modernidad neoliberal,  entendida  más  como  una  estructura  de  experiencia que como un periodo histórico, como unavisiónquese ha convertido en el episteme9a través del cual se experimenta y construye la ciudad desde las cimas del poder, desde donde se filtran los deseos, las imaginaciones, las fobias y los símbolos hacia el resto de la sociedad,durante los últimos  años,  ciertos  barrios  céntricos  se  han  convertido  en  un  teatro,  en  un  espacio  de revalorización  excluyente: frente  al  telón  se  muestra  una  cornucopia  de  atracciones,  un sinnúmero  de  malabarescapaz  de  divertir  y  hacer  reír  a  los  adinerados  que  antes  rehuían  a observar y sentir en ese escenario.</p>
@@ -98,17 +98,17 @@ const Landing = (props) => (
                         </div>
                     </div>
                 </section>
+                
                 <section>
-                <img src={vivir} alt="Vivir en un barrio neoliberal" />
+                <img src={macron} alt="¿Quién es Monsieur Macron?" />
                     <div className="content">
                         <div className="inner">
                             <header className="major">
-                                <h3>Vivir enun barrio neoliberal</h3>
-                                <h4>Revalorización excluyente, fantasmagoría y esterilización de la resistencia <br/>en la colonia Juárez, Ciudad de México</h4>
+                                <h3>¿Quién es Monsieur Macron?</h3>                                
                             </header>
-                            <p>En  la  actual  modernidad neoliberal,  entendida  más  como  una  estructura  de  experiencia que como un periodo histórico, como unavisiónquese ha convertido en el episteme9a través del cual se experimenta y construye la ciudad desde las cimas del poder, desde donde se filtran los deseos, las imaginaciones, las fobias y los símbolos hacia el resto de la sociedad,durante los últimos  años,  ciertos  barrios  céntricos  se  han  convertido  en  un  teatro,  en  un  espacio  de revalorización  excluyente: frente  al  telón  se  muestra  una  cornucopia  de  atracciones,  un sinnúmero  de  malabarescapaz  de  divertir  y  hacer  reír  a  los  adinerados  que  antes  rehuían  a observar y sentir en ese escenario.</p>
+                            <p>Emmanuel Macron se presenta, ante los franceses y la opinión mundial, como una fuerza joven, progresista y liberal cuya victoria significaría un triunfo por partida doble: contra el populismo xenofóbico de Trump y la destrucción de la Unión Europea, encarnada en Le Pen. ¿Es Macron la respuesta? </p>
                             <ul className="actions">
-                                <li><Link to="https://na-st01.ext.exlibrisgroup.com/52COLMEX_INST/storage/alma/50/19/ED/4A/D7/4F/AF/5A/28/10/D4/2C/A0/77/42/85/becerril_jm.pdf?Expires=1601613271&Signature=iH8xH~y2oxt-9nJOBaznT9QWb5wz6E2xTwXhSQgz1IOH-Nw2WM-2TrAzXVnfoOuTBIqvKI3dZ6ClNsgXu5PL23QB2OyYo76nsH1s0~NdE1js3t~4-ERDBWVnwcNGB~ZvJYBF6qRFEcvFYtMZJ0bxDJY3QnJDIdmCtpbdLfHF~JkMMqeSQ3aElzn-XJj~kXhHQF9-sX0ixMyY95D5hkogNaQvTLen62CWfV6VLNNvw9Ion1GppfGb2rlduxSo9Umyh8eZisvnAmr~f0jB~EsK2PugurNn2RctlPSimhE1TJV8MCYU8F4c9Y9HFUk-hF91bI9Nc8GF2eX8W5GN8HQOIA__&Key-Pair-Id=APKAJ72OZCZ36VGVASIA" className="button">Read more</Link></li>
+                                <li><Link to="https://horizontal.mx/quien-es-monsieur-macron/" className="button">Read more</Link></li>
                             </ul>
                         </div>
                     </div>
@@ -126,21 +126,7 @@ const Landing = (props) => (
                             </ul>
                         </div>
                     </div>
-                </section>
-                <section>
-                <img src={macron} alt="¿Quién es Monsieur Macron?" />
-                    <div className="content">
-                        <div className="inner">
-                            <header className="major">
-                                <h3>¿Quién es Monsieur Macron?</h3>                                
-                            </header>
-                            <p>Emmanuel Macron se presenta, ante los franceses y la opinión mundial, como una fuerza joven, progresista y liberal cuya victoria significaría un triunfo por partida doble: contra el populismo xenofóbico de Trump y la destrucción de la Unión Europea, encarnada en Le Pen. ¿Es Macron la respuesta? </p>
-                            <ul className="actions">
-                                <li><Link to="https://horizontal.mx/quien-es-monsieur-macron/" className="button">Read more</Link></li>
-                            </ul>
-                        </div>
-                    </div>
-                </section>
+                </section>               
             </section>
         </div>
 
