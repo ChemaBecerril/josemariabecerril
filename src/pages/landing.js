@@ -2,11 +2,11 @@ import React from 'react'
 import { Link } from 'gatsby'
 import Helmet from 'react-helmet'
 import Layout from '../components/layout'
-import BannerLanding from '../components/BannerLanding'
+import BannerArticles from '../components/BannerArticles'
 
 import pic08 from '../assets/images/pic08.jpg'
 import pic09 from '../assets/images/pic09.jpg'
-import pic10 from '../assets/images/pic10.jpg'
+import about from '../assets/images/about.jpg'
 
 const Landing = (props) => (
     <Layout>
@@ -15,7 +15,7 @@ const Landing = (props) => (
             <meta name="description" content="Landing Page" />
         </Helmet>
 
-        <BannerLanding />
+        <BannerArticles />
 
         <div id="main">
             <section id="one">
@@ -61,7 +61,7 @@ const Landing = (props) => (
                 </section>
                 <section>
                     <Link to="/generic" className="image">
-                        <img src={pic10} alt="" />
+                        <img src={about} alt="" />
                     </Link>
                     <div className="content">
                         <div className="inner">

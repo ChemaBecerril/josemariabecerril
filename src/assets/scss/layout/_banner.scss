@@ -24,6 +24,10 @@
 		position: relative;
 		top: -3.25em;
 
+		&.articles{
+			@include vendor('background-image', 'url("../images/articles.jpg")');
+		}
+
 		&:after {
 			@include vendor('transition', 'opacity #{_duration(banner)} ease');
 			@include vendor('transition-delay', '0.75s');
@@ -95,7 +99,7 @@
 		}
 
 		&.major {
-			height: 75vh;
+			height: 100vh;
 			min-height: 30em;
 			max-height: 50em;
 
