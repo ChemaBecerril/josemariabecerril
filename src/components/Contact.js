@@ -4,7 +4,7 @@ const Contact = (props) => (
     <section id="contact">
         <div className="inner">
             <section>
-                <form method="post" action="https://getform.io/f/9fa45cf5-865c-4150-b309-fdf6d272b59b">
+                <form method="post" action="https://getform.io/f/13697680-a8c1-482f-80d3-421fa21c424b">
                     <div className="field half first">
                         <label htmlFor="name">Name</label>
                         <input type="text" name="name" id="name" />
