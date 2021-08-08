@@ -24,7 +24,6 @@ const Generic = (props) => (
                 </div>
             </section>
         </div>
-
     </Layout>
 )
 
