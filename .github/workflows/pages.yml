@@ -1,0 +1,32 @@
+name: GitHub Pages
+
+on:
+  push:
+    branches:
+      - master
+    paths: 
+      - src/**
+
+jobs:  
+  publish:
+    runs-on: ubuntu-latest    
+    steps:      
+      - name: Checkout 🛎️
+        uses: actions/checkout@master  
+      
+      - name: Install gatsby required dependencies
+        run: npm install
+        
+      - name: Generate deployment build
+        run: npm run build
+
+      - name: Create CNAME record
+        run: echo josemariabecerril.com > ./public/CNAME
+        
+      - name: Deploy to GitHub Pages
+        uses: JamesIves/github-pages-deploy-action@4.1.4
+        with:
+          branch: gh-pages
+          folder: public
+
+        
