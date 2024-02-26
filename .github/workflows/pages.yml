@@ -9,10 +9,19 @@ on:
 
 jobs:  
   publish:
-    runs-on: ubuntu-latest    
+    runs-on: ubuntu-20.04    
+    container:
+      image: python:2.7.18-buster
     steps:      
       - name: Checkout 🛎️
-        uses: actions/checkout@master  
+        uses: actions/checkout@v4.1.1
+        with:
+          sparse-checkout: false
+        
+      - name: Setup Node.js environment
+        uses: actions/setup-node@v2
+        with:
+          node-version: '14' # Specify the version of Node.js you want to use
       
       - name: Install gatsby required dependencies
         run: npm install
@@ -24,9 +33,9 @@ jobs:
         run: echo josemariabecerril.com > ./public/CNAME
         
       - name: Deploy to GitHub Pages
-        uses: JamesIves/github-pages-deploy-action@4.1.4
+        uses: peaceiris/actions-gh-pages@v3
         with:
-          branch: gh-pages
-          folder: public
+         github_token: ${{ secrets.GITHUB_TOKEN }}
+         publish_dir: ./public
 
         
