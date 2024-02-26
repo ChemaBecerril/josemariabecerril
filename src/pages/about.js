@@ -28,9 +28,9 @@ My master's thesis was an ethnographic study on the bureaucratic practice of for
 
 Following my master's degree, I learned Yucatec Maya at the Institut national des langues et civilisations orientales (INALCO) in Paris. I then spent 15 months conducting fieldwork among Mayan peasants from the municipality of Felipe Carrillo Puerto in southeastern Mexico. Currently, my doctoral thesis explores how sustainable forestry policies, implemented in the region through Mexico-German technical cooperation, have transformed the everyday relations of Maya peasants with the living and spirit beings of their communal forests. I analyze how these ecological transformations intertwine with changes in political subjectivities, as well as moral understandings of the State, the economy, religion, kinship, and value.<p>
 
-My doctoral research has received funding from various institutions including the French Minister of Higher Education, Research and Innovation, Maison Française d'Oxford, Casa de Velázquez (Madrid), Ibero-Amerikanisches Institut (Berlin), and Centro de Estudios Mexicanos y Centroamericanos (Mexico City), among others.<p> In addition to my academic work, I have also written ethnographic research intended for public audiences in publications such as Nexos, Jacobin, Pie de Página, and Horizontal. </p>
-                        <a href={cv} className="button icon special fa-download">Curriculum Vitae</a>
-                        </div>
+My doctoral research has received funding from various institutions including the French Minister of Higher Education, Research and Innovation, Maison Française d'Oxford, Casa de Velázquez (Madrid), Ibero-Amerikanisches Institut (Berlin), and Centro de Estudios Mexicanos y Centroamericanos (Mexico City), among others.</p><p> In addition to my academic work, I have also written ethnographic research intended for public audiences in publications such as Nexos, Jacobin, Pie de Página, and Horizontal. </p>
+<a href={cv} className="button icon special fa-download">Curriculum Vitae</a>
+</div>
                         <div className="col-6">
                         <span className="image fit"><img src={me} alt="Me in Berlin"  style={{maxWidth: '350px', margin:"0 auto"}}/></span>
                         </div>                        
