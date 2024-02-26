@@ -2,9 +2,10 @@ import React from 'react'
 import Helmet from 'react-helmet'
 import Layout from '../components/layout'
 
-import me from '../assets/images/me_in_berlin.jpg'
+// Update the import to point to the new image file
+import me from '../assets/images/me-in-oxford-2023.jpg'
 import cv from '../assets/documents/CV-Becerril-English.pdf'
-//import favicon from '../assets/images/fa
+
 const Generic = (props) => (
     <Layout>
         <Helmet>
@@ -32,7 +33,8 @@ My doctoral research has received funding from various institutions including th
 <a href={cv} className="button icon special fa-download">Curriculum Vitae</a>
 </div>
                         <div className="col-6">
-                        <span className="image fit"><img src={me} alt="Me in Berlin"  style={{maxWidth: '350px', margin:"0 auto"}}/></span>
+                            {/* Update the img src to use the new image */}
+                            <span className="image fit"><img src={me} alt="Me in Oxford 2023"  style={{maxWidth: '350px', margin:"0 auto"}}/></span>
                         </div>                        
                     </div>                    
                 </div>
