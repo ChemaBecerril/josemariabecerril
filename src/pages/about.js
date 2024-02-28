@@ -3,7 +3,7 @@ import Helmet from 'react-helmet'
 import Layout from '../components/layout'
 
 import me from '../assets/images/me-in-oxford-2023.jpg'
-import cv from '../assets/documents/CV-Becerril-English.pdf'
+import cv from '../assets/documents/CV-Becerril-FR.pdf'
 
 const About = (props) => (
   <Layout>
@@ -48,6 +48,5 @@ const About = (props) => (
 
 export default About
 
-export default About
 
 
