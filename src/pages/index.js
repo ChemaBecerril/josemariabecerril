@@ -20,7 +20,7 @@ class HomeIndex extends React.Component {
                     title="Josemaría Becerril"
                     meta={[
                         { name: 'description', content: 'Josemaría Becerril' },
-                        { name: 'keywords', content: 'Political scientist & anthropologist' },
+                        { name: 'keywords', content: 'Political scientist & social anthropologist' },
                     ]}
                 >
                 </Helmet>
@@ -30,28 +30,28 @@ class HomeIndex extends React.Component {
                 <div id="main">
                     <section id="one" className="tiles">
                         <article style={{backgroundImage: `url(${about})`}}>
-                            <header className="major">
+                            <header className="major" style={{fontFamily: 'Helvetica, Arial, sans-serif'}}>
                                 <h3>About</h3>
                                 <p>A brief description of me</p>
                             </header>
                             <Link to="/about" className="link primary"></Link>
                         </article>
                         <article style={{backgroundImage: `url(${articles})`}}>
-                            <header className="major">
+                            <header className="major" style={{fontFamily: 'Helvetica, Arial, sans-serif'}}>
                                 <h3>Articles</h3>
                                 <p>Ethnographic research intended for public audiences</p>
                             </header>
                             <Link to="/articles" className="link primary"></Link>
                         </article>
                         <article style={{backgroundImage: `url(${fieldwork})`}}>
-                            <header className="major">
+                            <header className="major" style={{fontFamily: 'Helvetica, Arial, sans-serif'}}>
                                 <h3>Fieldwork</h3>
                                 <p>Some of my fieldwork</p>
                             </header>
                             <Link to="/" className="link primary"></Link>
                         </article>
                         <article style={{backgroundImage: `url(${events})`}}>
-                            <header className="major">
+                            <header className="major" style={{fontFamily: 'Helvetica, Arial, sans-serif'}}>
                                 <h3>Events</h3>
                                 <p>Events I have participated in</p>
                             </header>
