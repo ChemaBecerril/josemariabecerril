@@ -10,6 +10,11 @@ const About = (props) => (
     <Helmet>
       <title>About | Josemaría Becerril</title>
       <meta name="description" content="About | Josemaría Becerril" />
+      <style>{`
+        body, p, h1, h2, h3, h4, h5, h6 {
+          font-family: Helvetica, Arial, sans-serif;
+        }
+      `}</style>
     </Helmet>
 
     <div id="main" className="alt">
@@ -29,7 +34,12 @@ const About = (props) => (
               <a href={cv} className="button icon special fa-download">Curriculum Vitae</a>
             </div>
             <div className="col-6">
-              <span className="image fit"><img src={me} alt="Me in Oxford 2023" style={{maxWidth: '350px', margin:"0 auto"}}/></span>
+              <figure style={{ textAlign: 'left' }}>
+                <img src={me} alt="Me in Oxford 2023" style={{ maxWidth: '350px', margin: "0 auto" }} />
+                <figcaption style={{ fontSize: '14px', marginTop: '5px' }}>
+                  In front of a box of objects from Mexico at the Pitt Rivers Museum in Oxford, fall 2023.
+                </figcaption>
+              </figure>
             </div>
           </div>
         </div>
@@ -39,4 +49,5 @@ const About = (props) => (
 )
 
 export default About
+
 
