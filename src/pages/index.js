@@ -39,7 +39,7 @@ class HomeIndex extends React.Component {
                         <article style={{backgroundImage: `url(${articles})`}}>
                             <header className="major" style={{fontFamily: 'Helvetica, Arial, sans-serif'}}>
                                 <h3>Articles</h3>
-                                <p>Ethnographic research intended for public audiences</p>
+                                <p>Research articles, book reviews and public ethnography</p>
                             </header>
                             <Link to="/articles" className="link primary"></Link>
                         </article>
@@ -52,8 +52,8 @@ class HomeIndex extends React.Component {
                         </article>
                         <article style={{backgroundImage: `url(${events})`}}>
                             <header className="major" style={{fontFamily: 'Helvetica, Arial, sans-serif'}}>
-                                <h3>Teaching</h3>
-                                <p>Some of the classes I have taught in</p>
+                                <h3>Teaching & Events</h3>
+                                <p>Some of the classes I have taught and other activities in</p>
                             </header>
                             <Link to="/" className="link primary"></Link>
                         </article>
