@@ -10,7 +10,7 @@ const Banner = (props) => (
                 <p>Political scientist and anthropologist<br />
                 Specialized in the ethnography of vulnerability, power and science & technology</p>
                 <ul className="actions">
-                    <li><a href="#one" className="button next scrolly">Experience</a></li>
+                    <li><a href="#one" className="button next scrolly">My work</a></li>
                 </ul>
             </div>
         </div>
