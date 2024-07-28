@@ -12,6 +12,10 @@ const Landing = (props) => (
             <style>{`
                 body, h1, h2, h3, h4, h5, h6, p, a, div, span, ul, li {
                     font-family: 'Helvetica', sans-serif;
+                    text-align: left;
+                }
+                .content {
+                    padding: 0 1em;
                 }
             `}</style>
         </Helmet>
@@ -99,7 +103,7 @@ const Landing = (props) => (
                         <div className="inner">
                             <header className="major">
                                 <h3>Review for Estudios Sociológicos</h3>
-                                <h4>De Iguala a Ayotzinapa. La escena y el crimen [From Iguala to Ayotzinapa. The scene and the crime] By Fernando Escalante and Julián Canseco. Mexico City: El Colegio de México/Grando de Sal, 2019. 167 pp.</h4>
+                                <h4>De Iguala a Ayotzinapa. La escena y el crimen [From Iguala to Ayotzinapa. The scene and the crime] By Fernando Escalante and Julián Canseco. Mexico City: El Colegio de México/Grano de Sal, 2019. 167 pp.</h4>
                             </header>
                             <ul className="actions">
                                 <li><Link to="https://estudiossociologicos.colmex.mx/index.php/es/article/view/2179/1979" className="button">Read more</Link></li>
@@ -128,9 +132,9 @@ const Landing = (props) => (
                     <div className="content">
                         <div className="inner">
                             <header className="major">
-                                <h3>Vivir en un barrio neoliberal</h3>
+                                <h3>Living in a Neoliberal Neighborhood</h3>
                             </header>
-                            <p>Los intereses económicos, políticos y privados en la disputa por la plusvalía inmobiliaria.</p>
+                            <p>Economic, political, and private interests in the dispute over gentrification.</p>
                             <ul className="actions">
                                 <li><Link to="https://horizontal.mx/vivir-en-un-barrio-neoliberal/" className="button">Read more</Link></li>
                             </ul>
@@ -141,9 +145,9 @@ const Landing = (props) => (
                     <div className="content">
                         <div className="inner">
                             <header className="major">
-                                <h3>Faltan 43</h3>
+                                <h3>Missing 43</h3>
                             </header>
-                            <p>As part of the activities of the Student Society of El Colegio de México, I participated in the collective that edited and wrote a compendium of texts on the forced disappearance of 43 students from the Isidro Burgos Rural Normal School of Ayotzinapa on the night of September 26, 2014 in Iguala, Guerrero. I contributed a text on the connections between gold extractive economies and mass violence in the region of the disappearance.</p>
+                            <p>Within the activities of the Student Society of El Colegio de México, I participated in the collective that edited and wrote a compendium of texts on the forced disappearance of 43 students from the Isidro Burgos Rural Normal School of Ayotzinapa on the night of September 26, 2014 in Iguala, Guerrero. I contributed a text on the connections between gold extractive economies and mass violence in the region of the disappearance.</p>
                             <ul className="actions">
                                 <li><Link to="https://laoms.org/descargar-43-voces-por-ayotzinapa/" className="button">Read more</Link></li>
                             </ul>
@@ -154,9 +158,9 @@ const Landing = (props) => (
                     <div className="content">
                         <div className="inner">
                             <header className="major">
-                                <h3>¿Quién es Monsieur Macron?</h3>
+                                <h3>Who is Monsieur Macron?</h3>
                             </header>
-                            <p>Emmanuel Macron se presenta, ante los franceses y la opinión mundial, como una fuerza joven, progresista y liberal cuya victoria significaría un triunfo por partida doble: contra el populismo xenofóbico de Trump y la destrucción de la Unión Europea, encarnada en Le Pen. ¿Es Macron la respuesta?</p>
+                            <p>Emmanuel Macron presents himself to the French and the world opinion as a young, progressive, and liberal force whose victory would mean a double triumph: against Trump's xenophobic populism and the destruction of the European Union, embodied in Le Pen. Is Macron the answer?</p>
                             <ul className="actions">
                                 <li><Link to="https://horizontal.mx/quien-es-monsieur-macron/" className="button">Read more</Link></li>
                             </ul>
@@ -167,9 +171,9 @@ const Landing = (props) => (
                     <div className="content">
                         <div className="inner">
                             <header className="major">
-                                <h3>Sobre la gentrificación de la colonia Juárez a 111 años de su surgimiento</h3>
+                                <h3>On the Gentrification of Colonia Juárez 111 Years After Its Emergence</h3>
                             </header>
-                            <p>En 1906, la colonia Juárez surge como el resultado de un negocio entre amigos. Así se le llamó al triangulo urbano que había sido desarrollado en las décadas anteriores mediante concesiones entre el gobierno porfirista y la élite empresarial de la época. Desde sus orígenes, la Juárez fue un proyecto económico más que urbanístico, el objetivo principal del Estado porfirista había sido expandir los alcances del mercado inmobiliario sobre zonas agrícolas, sustento de indios y campesinos, para permitir el lucro privado y la especulación a acaudalados favoritos del régimen, valorando las inversiones por encima de cualquier consideración social. Así, las grandes obras inmobiliarias del Estado estaban orientadas a facilitar el crecimiento de colonias exclusivas: el embellecimiento de Paseo de la Reforma a cargo del erario público, facilitó las ganancias por el fraccionamiento de la colonia contigua, dinero que habría de quedarse en sólo algunos bolsillos.</p>
+                            <p>In 1906, Colonia Juárez emerged as the result of a business deal among friends. This was the name given to the urban triangle that had been developed in the previous decades through concessions between the Porfirian government and the business elite of the time. From its origins, Juárez was an economic project rather than an urbanistic one; the main objective of the Porfirian state had been to expand the reaches of the real estate market over agricultural areas, the livelihood of indigenous people and peasants, to allow private profit and speculation to wealthy favorites of the regime, valuing investments over any social consideration. Thus, the state's large real estate projects were aimed at facilitating the growth of exclusive colonies: the beautification of Paseo de la Reforma by public funds facilitated the profits from the subdivision of the adjacent colony, money that would end up in only a few pockets.</p>
                             <ul className="actions">
                                 <li><Link to="https://labrujula.nexos.com.mx/?p=1339" className="button">Read more</Link></li>
                             </ul>
