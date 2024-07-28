@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 
 const BannerArticles = (props) => (
     <section id="banner" className="style2 articles major">
@@ -7,11 +7,10 @@ const BannerArticles = (props) => (
                 <h1>Articles</h1>
             </header>
             <div className="content">
-                <p>Ethnographic research intended for public audiences<br />
-                Published by Nexos, Jacobin, Pie de Página and Horizontal</p>
+                <p>Research articles, book reviews and public ethnography</p>
             </div>
         </div>
     </section>
-)
+);
 
-export default BannerArticles
+export default BannerArticles;
