@@ -7,7 +7,7 @@ import Banner from '../components/Banner'
 import about from '../assets/images/about.jpg'
 import articles from '../assets/images/articles.jpg'
 import fieldwork from '../assets/images/fieldwork.jpg'
-import events from '../assets/images/events.jpg'
+import events from '../assets/images/Teaching.jpg'
 import pic05 from '../assets/images/pic05.jpg'
 import pic06 from '../assets/images/pic06.jpg'
 
