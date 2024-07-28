@@ -8,7 +8,7 @@ const Banner = (props) => (
             </header>
             <div className="content">
                 <p>Political scientist and anthropologist<br />
-                Specialized in the ethnography of vulnerability, the State and science & technology</p>
+                Specialized in the ethnography of vulnerability, power and science & technology</p>
                 <ul className="actions">
                     <li><a href="#one" className="button next scrolly">Experience</a></li>
                 </ul>
