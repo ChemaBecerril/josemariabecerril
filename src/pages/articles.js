@@ -123,7 +123,7 @@ const Landing = (props) => (
                             </header>
                             <p>Mexico's neoliberal reforms have created fertile ground for exploitative "sharing-economy" apps to grow.</p>
                             <ul className="actions">
-                                <li><Link to="https://nacla.org/article/sharing-economy-comes-mexico" className="button">Read more</Link></li>
+                                <li><Link to="https://jacobin.com/2017/01/sharing-economy-mexico-apli-informal-labor-precarity/" className="button">Read more</Link></li>
                             </ul>
                         </div>
                     </div>
