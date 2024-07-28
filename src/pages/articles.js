@@ -145,7 +145,7 @@ const Landing = (props) => (
                             </header>
                             <p>As part of the activities of the Student Society of El Colegio de México, I participated in the collective that edited and wrote a compendium of texts on the forced disappearance of 43 students from the Isidro Burgos Rural Normal School of Ayotzinapa on the night of September 26, 2014 in Iguala, Guerrero. I contributed a text on the connections between gold extractive economies and mass violence in the region of the disappearance.</p>
                             <ul className="actions">
-                                <li><Link to={faltan} className="button">Read more</Link></li>
+                                <li><Link to="https://laoms.org/descargar-43-voces-por-ayotzinapa/" className="button">Read more</Link></li>
                             </ul>
                         </div>
                     </div>
