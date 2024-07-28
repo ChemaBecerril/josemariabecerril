@@ -4,20 +4,16 @@ import Helmet from 'react-helmet';
 import Layout from '../components/layout';
 import BannerArticles from '../components/BannerArticles';
 
-import frames from '../assets/images/frames of mexican drug war.jpg';
-import jerarquias from '../assets/images/jerarquias postmortem.jpg';
-import sharing from '../assets/images/sharing.png';
-import vivir from '../assets/images/vivir en un barrio neoliberal.png';
-import faltan from '../assets/documents/faltan mas.pdf';
-import faltanImage from '../assets/images/faltan mas.png';
-import gentrificacion from '../assets/images/gentrificacion.png';
-import macron from '../assets/images/macron.jpg';
-
 const Landing = (props) => (
     <Layout>
         <Helmet>
             <title>Articles | Josemaría Becerril</title>
             <meta name="description" content="Articles | Josemaría Becerril" />
+            <style>{`
+                body, h1, h2, h3, h4, h5, h6, p, a, div, span, ul, li {
+                    font-family: 'Helvetica', sans-serif;
+                }
+            `}</style>
         </Helmet>
 
         <BannerArticles />
@@ -28,26 +24,6 @@ const Landing = (props) => (
                     <h2>Research Articles</h2>
                 </header>
                 <section>
-                    <div className="image-wrapper">
-                        <img src={frames} alt="The frames of the Mexican drug war" />
-                    </div>
-                    <div className="content">
-                        <div className="inner">
-                            <header className="major">
-                                <h3>The frames of the Mexican drug war:</h3>
-                                <h4>Grievability, sacrificial loss and melancholia</h4>
-                            </header>
-                            <p>Judith Butler's works concerning the discursive practices used for legitimizing State violence offer a useful vantage point for exploring how the Mexican government has organized public representations of death during its ongoing Drug War. Following her insight that “frames of war” sustain a differential distribution of grievability, this article explores the discourse through which the government has presented poignant cases of carnage in order to highlight the usefulness of specific categories for sustaining and normalizing the war violence. By appropriating Butler's division between “grievable” and “un-grievable” subjects, this article complicates the understanding of the frames of war by showing that in Mexico they do not hide death but instead they allow for the exhibition of lost lives through sacrificial mourning. After showing the connections between the allocation of grievability, the quest for sovereignty and the instrumentalization of dead bodies, the article concludes by pointing towards the political possibilities of melancholia.</p>
-                            <ul className="actions">
-                                <li><Link to="https://www.cairn-int.info/abstract-E_RAI_076_0093--the-frames-of-the-mexican-drug-war.htm?contenu=resume" className="button">Read more</Link></li>
-                            </ul>
-                        </div>
-                    </div>
-                </section>
-                <section>
-                    <div className="image-wrapper">
-                        <img src={jerarquias} alt="Disappearing in the Mesh of the State" />
-                    </div>
                     <div className="content">
                         <div className="inner">
                             <header className="major">
@@ -62,9 +38,6 @@ const Landing = (props) => (
                     </div>
                 </section>
                 <section>
-                    <div className="image-wrapper">
-                        <img src={jerarquias} alt="Mexique: Une terre de disparu.e.s" />
-                    </div>
                     <div className="content">
                         <div className="inner">
                             <header className="major">
@@ -77,14 +50,25 @@ const Landing = (props) => (
                         </div>
                     </div>
                 </section>
+                <section>
+                    <div className="content">
+                        <div className="inner">
+                            <header className="major">
+                                <h3>The Frames of the Mexican Drug War:</h3>
+                                <h4>Grievability, Sacrificial Loss, and Melancholia</h4>
+                            </header>
+                            <p>Judith Butler's works concerning the discursive practices used for legitimizing State violence offer a useful vantage point for exploring how the Mexican government has organized public representations of death during its ongoing Drug War. Following her insight that “frames of war” sustain a differential distribution of grievability, this article explores the discourse through which the government has presented poignant cases of carnage in order to highlight the usefulness of specific categories for sustaining and normalizing the war violence. By appropriating Butler's division between “grievable” and “un-grievable” subjects, this article complicates the understanding of the frames of war by showing that in Mexico they do not hide death but instead they allow for the exhibition of lost lives through sacrificial mourning. After showing the connections between the allocation of grievability, the quest for sovereignty and the instrumentalization of dead bodies, the article concludes by pointing towards the political possibilities of melancholia.</p>
+                            <ul className="actions">
+                                <li><Link to="https://www.cairn-int.info/abstract-E_RAI_076_0093--the-frames-of-the-mexican-drug-war.htm?contenu=resume" className="button">Read more</Link></li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
 
                 <header className="major">
                     <h2>Book Reviews</h2>
                 </header>
                 <section>
-                    <div className="image-wrapper">
-                        <img src={sharing} alt="Review for American Ethnologist" />
-                    </div>
                     <div className="content">
                         <div className="inner">
                             <header className="major">
@@ -98,9 +82,6 @@ const Landing = (props) => (
                     </div>
                 </section>
                 <section>
-                    <div className="image-wrapper">
-                        <img src={sharing} alt="Review for L'Homme" />
-                    </div>
                     <div className="content">
                         <div className="inner">
                             <header className="major">
@@ -114,9 +95,6 @@ const Landing = (props) => (
                     </div>
                 </section>
                 <section>
-                    <div className="image-wrapper">
-                        <img src={sharing} alt="Review for Estudios Sociológicos" />
-                    </div>
                     <div className="content">
                         <div className="inner">
                             <header className="major">
@@ -134,9 +112,6 @@ const Landing = (props) => (
                     <h2>Public Ethnography</h2>
                 </header>
                 <section>
-                    <div className="image-wrapper">
-                        <img src={sharing} alt="The Sharing Economy Comes to Mexico" />
-                    </div>
                     <div className="content">
                         <div className="inner">
                             <header className="major">
@@ -150,31 +125,25 @@ const Landing = (props) => (
                     </div>
                 </section>
                 <section>
-                    <div className="image-wrapper">
-                        <img src={vivir} alt="Vivir en un barrio neoliberal" />
-                    </div>
                     <div className="content">
                         <div className="inner">
                             <header className="major">
                                 <h3>Vivir en un barrio neoliberal</h3>
                             </header>
-                            <p>Los intereses económicos, políticos y criminales organizan la vida cotidiana en un barrio popular de la Ciudad de México.</p>
+                            <p>Los intereses económicos, políticos y privados en la disputa por la plusvalía inmobiliaria.</p>
                             <ul className="actions">
-                                <li><Link to="https://nacla.org/article/living-neoliberal-neighborhood" className="button">Read more</Link></li>
+                                <li><Link to="https://horizontal.mx/vivir-en-un-barrio-neoliberal/" className="button">Read more</Link></li>
                             </ul>
                         </div>
                     </div>
                 </section>
                 <section>
-                    <div className="image-wrapper">
-                        <img src={faltanImage} alt="¿Qué significa decir «Faltan más»?" />
-                    </div>
                     <div className="content">
                         <div className="inner">
                             <header className="major">
-                                <h3>¿Qué significa decir «Faltan más»?</h3>
+                                <h3>Faltan 43</h3>
                             </header>
-                            <p>Al cumplirse un año de la desaparición de los 43 normalistas de Ayotzinapa, el Comité de Familiares de Desaparecidos Hasta Encontrarlos y el Comité de Familiares de Migrantes Fallecidos y Desaparecidos de El Salvador realizaron un foro en El Colegio de México titulado “Faltan más: desapariciones, migración y fronteras”. La actividad, formada por tres mesas, tuvo lugar el 9 de septiembre de 2015 en la sala Alfonso Reyes del Colmex y fue transmitida en vivo desde la página web de la institución. Contó con la presencia de especialistas en derechos humanos y desaparición forzada, con el testimonio de las familias de los desaparecidos y caídos la noche del 26 de septiembre y con el apoyo de la comunidad de El Colegio de México: alumnas, profesoras y autoridades.</p>
+                            <p>As part of the activities of the Student Society of El Colegio de México, I participated in the collective that edited and wrote a compendium of texts on the forced disappearance of 43 students from the Isidro Burgos Rural Normal School of Ayotzinapa on the night of September 26, 2014 in Iguala, Guerrero. I contributed a text on the connections between gold extractive economies and mass violence in the region of the disappearance.</p>
                             <ul className="actions">
                                 <li><Link to={faltan} className="button">Read more</Link></li>
                             </ul>
@@ -182,15 +151,12 @@ const Landing = (props) => (
                     </div>
                 </section>
                 <section>
-                    <div className="image-wrapper">
-                        <img src={macron} alt="¿Quién es Monsieur Macron?" />
-                    </div>
                     <div className="content">
                         <div className="inner">
                             <header className="major">
                                 <h3>¿Quién es Monsieur Macron?</h3>
                             </header>
-                            <p>Emmanuel Macron se presenta, ante los franceses y la opinión mundial, como una fuerza joven, progresista y liberal cuya victoria significaría un triunfo por partida doble: contra el populismo xenofóbico de Trump y la destrucción de la Unión Europea, encarnada en Le Pen. ¿Es Macron la respuesta? </p>
+                            <p>Emmanuel Macron se presenta, ante los franceses y la opinión mundial, como una fuerza joven, progresista y liberal cuya victoria significaría un triunfo por partida doble: contra el populismo xenofóbico de Trump y la destrucción de la Unión Europea, encarnada en Le Pen. ¿Es Macron la respuesta?</p>
                             <ul className="actions">
                                 <li><Link to="https://horizontal.mx/quien-es-monsieur-macron/" className="button">Read more</Link></li>
                             </ul>
@@ -198,9 +164,6 @@ const Landing = (props) => (
                     </div>
                 </section>
                 <section>
-                    <div className="image-wrapper">
-                        <img src={gentrificacion} alt="Sobre la gentrificación de la colonia Juárez a 111 años de su surgimiento" />
-                    </div>
                     <div className="content">
                         <div className="inner">
                             <header className="major">
