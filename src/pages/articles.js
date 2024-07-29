@@ -13,9 +13,42 @@ const Landing = (props) => (
                 body, h1, h2, h3, h4, h5, h6, p, a, div, span, ul, li {
                     font-family: 'Helvetica', sans-serif;
                     text-align: left;
+                    color: #000; /* Default text color */
+                }
+                #main {
+                    background: url('/path/to/articles.jpg') no-repeat center center fixed; 
+                    background-size: cover;
+                    padding: 2em;
                 }
                 .content {
-                    padding: 0 1em;
+                    background: transparent;
+                    padding: 0;
+                    list-style-type: none;
+                }
+                .content li {
+                    margin-bottom: 1.5em;
+                }
+                .content h3 {
+                    margin: 0 0 0.5em 0;
+                }
+                .content h4 {
+                    margin: 0 0 1em 0;
+                }
+                .content p {
+                    margin: 0 0 1em 0;
+                }
+                .content .button {
+                    background-color: #000;
+                    color: #fff;
+                    padding: 0.5em 1em;
+                    text-decoration: none;
+                    border-radius: 5px;
+                }
+                .content .button:hover {
+                    background-color: #333;
+                }
+                ul.actions {
+                    padding-left: 0;
                 }
             `}</style>
         </Helmet>
@@ -27,8 +60,8 @@ const Landing = (props) => (
                 <header className="major">
                     <h2>Research Articles</h2>
                 </header>
-                <section>
-                    <div className="content">
+                <ul className="content">
+                    <li>
                         <div className="inner">
                             <header className="major">
                                 <h3>Disappearing in the Mesh of the State:</h3>
@@ -39,10 +72,8 @@ const Landing = (props) => (
                                 <li><Link to="https://revues.mshparisnord.fr/chcp/index.php?id=674" className="button">Read more</Link></li>
                             </ul>
                         </div>
-                    </div>
-                </section>
-                <section>
-                    <div className="content">
+                    </li>
+                    <li>
                         <div className="inner">
                             <header className="major">
                                 <h3>Mexique: Une terre de disparu.e.s</h3>
@@ -52,10 +83,8 @@ const Landing = (props) => (
                                 <li><Link to="https://omnibook.com/view/e31c6d6e-215d-4dd8-84a6-61797858f3f4/page/1" className="button">Read more</Link></li>
                             </ul>
                         </div>
-                    </div>
-                </section>
-                <section>
-                    <div className="content">
+                    </li>
+                    <li>
                         <div className="inner">
                             <header className="major">
                                 <h3>The Frames of the Mexican Drug War:</h3>
@@ -66,14 +95,13 @@ const Landing = (props) => (
                                 <li><Link to="https://www.cairn-int.info/abstract-E_RAI_076_0093--the-frames-of-the-mexican-drug-war.htm?contenu=resume" className="button">Read more</Link></li>
                             </ul>
                         </div>
-                    </div>
-                </section>
-
+                    </li>
+                </ul>
                 <header className="major">
                     <h2>Book Reviews</h2>
                 </header>
-                <section>
-                    <div className="content">
+                <ul className="content">
+                    <li>
                         <div className="inner">
                             <header className="major">
                                 <h3>Review for American Ethnologist</h3>
@@ -83,10 +111,8 @@ const Landing = (props) => (
                                 <li><Link to="https://anthrosource.onlinelibrary.wiley.com/doi/10.1111/amet.13152" className="button">Read more</Link></li>
                             </ul>
                         </div>
-                    </div>
-                </section>
-                <section>
-                    <div className="content">
+                    </li>
+                    <li>
                         <div className="inner">
                             <header className="major">
                                 <h3>Review for L'Homme</h3>
@@ -96,10 +122,8 @@ const Landing = (props) => (
                                 <li><Link to="https://journals.openedition.org/lhomme/42483" className="button">Read more</Link></li>
                             </ul>
                         </div>
-                    </div>
-                </section>
-                <section>
-                    <div className="content">
+                    </li>
+                    <li>
                         <div className="inner">
                             <header className="major">
                                 <h3>Review for Estudios Sociológicos</h3>
@@ -109,14 +133,13 @@ const Landing = (props) => (
                                 <li><Link to="https://estudiossociologicos.colmex.mx/index.php/es/article/view/2179/1979" className="button">Read more</Link></li>
                             </ul>
                         </div>
-                    </div>
-                </section>
-
+                    </li>
+                </ul>
                 <header className="major">
                     <h2>Public Ethnography</h2>
                 </header>
-                <section>
-                    <div className="content">
+                <ul className="content">
+                    <li>
                         <div className="inner">
                             <header className="major">
                                 <h3>The Sharing Economy Comes to Mexico</h3>
@@ -126,10 +149,8 @@ const Landing = (props) => (
                                 <li><Link to="https://jacobin.com/2017/01/sharing-economy-mexico-apli-informal-labor-precarity/" className="button">Read more</Link></li>
                             </ul>
                         </div>
-                    </div>
-                </section>
-                <section>
-                    <div className="content">
+                    </li>
+                    <li>
                         <div className="inner">
                             <header className="major">
                                 <h3>Living in a Neoliberal Neighborhood</h3>
@@ -139,10 +160,8 @@ const Landing = (props) => (
                                 <li><Link to="https://horizontal.mx/vivir-en-un-barrio-neoliberal/" className="button">Read more</Link></li>
                             </ul>
                         </div>
-                    </div>
-                </section>
-                <section>
-                    <div className="content">
+                    </li>
+                    <li>
                         <div className="inner">
                             <header className="major">
                                 <h3>Missing 43</h3>
@@ -152,10 +171,8 @@ const Landing = (props) => (
                                 <li><Link to="https://laoms.org/descargar-43-voces-por-ayotzinapa/" className="button">Read more</Link></li>
                             </ul>
                         </div>
-                    </div>
-                </section>
-                <section>
-                    <div className="content">
+                    </li>
+                    <li>
                         <div className="inner">
                             <header className="major">
                                 <h3>Who is Monsieur Macron?</h3>
@@ -165,10 +182,8 @@ const Landing = (props) => (
                                 <li><Link to="https://horizontal.mx/quien-es-monsieur-macron/" className="button">Read more</Link></li>
                             </ul>
                         </div>
-                    </div>
-                </section>
-                <section>
-                    <div className="content">
+                    </li>
+                    <li>
                         <div className="inner">
                             <header className="major">
                                 <h3>On the Gentrification of Colonia Juárez 111 Years After Its Emergence</h3>
@@ -178,8 +193,8 @@ const Landing = (props) => (
                                 <li><Link to="https://labrujula.nexos.com.mx/?p=1339" className="button">Read more</Link></li>
                             </ul>
                         </div>
-                    </div>
-                </section>
+                    </li>
+                </ul>
             </section>
         </div>
     </Layout>
