@@ -3,7 +3,6 @@ import Helmet from 'react-helmet';
 import Layout from '../components/layout';
 
 import me from '../assets/images/me-in-oxford-2023.jpg';
-import cv from '../assets/documents/CV-Becerril-FR.pdf';
 
 const About = (props) => (
   <Layout>
@@ -29,7 +28,6 @@ const About = (props) => (
               <p>Following my master's degree on Mexico City's forensic bureaucracy, I learned Yucatec Maya at the Institut national des langues et civilisations orientales (INALCO) in Paris. I then spent 15 months conducting fieldwork among Mayan peasants from the municipality of Felipe Carrillo Puerto in southeastern Mexico. Under the supervision of <a href="https://perigpitrou.info/" target="_blank" rel="noopener noreferrer">Perig Pitrou</a> and <a href="http://olivierleguen.free.fr/" target="_blank" rel="noopener noreferrer">Olivier Le Guen</a>, my doctoral thesis explores how sustainable forestry policies, implemented in the region through Mexico-German technical cooperation, have transformed the everyday relations of Maya peasants with the living and spirit beings of their communal forests. I analyze how these ecological transformations intertwine with changes in political subjectivities, as well as moral understandings of power, the economy, religion, labour, and value.</p>
               <p>My doctoral research has received funding from various institutions including the French Minister of Higher Education, Research and Innovation, Maison Française d'Oxford, Casa de Velázquez (Madrid), Ibero-Amerikanisches Institut (Berlin), and Centro de Estudios Mexicanos y Centroamericanos (Mexico City), among others.</p>
               <p>Through fieldwork in the political margins of Mexico's contemporary society, I have specialized in the ethnography of vulnerability, power, and science & technology. More precisely, I focus on how individuals and collectives in heightened conditions of vulnerability construct and sustain their life projects, constantly negotiating and challenging the manifestations of science, capitalism, and the State in their daily lives. By sharing life with Mayan friends, I have developed a special ethnographic and theoretical attention to low-intensity decolonial politics, autonomous self-organization, and more-than-human care.</p>
-              <a href={cv} className="button icon special fa-download">Curriculum Vitae</a>
             </div>
             <div className="col-6">
               <figure style={{ textAlign: 'left' }}>
