@@ -1,7 +1,6 @@
 import React from 'react';
 import Helmet from 'react-helmet';
 import Layout from '../components/layout';
-
 import me from '../assets/images/me-in-oxford-2023.jpg';
 
 const About = (props) => (
