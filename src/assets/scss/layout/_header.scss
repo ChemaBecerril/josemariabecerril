@@ -36,7 +36,7 @@
 			height: inherit;
 			line-height: inherit;
 			padding: 0 1.5em;
-			text-shadow: 0 1px 6px rgba(0, 0, 0, 0.5);
+			text-shadow: 0 1px 3px rgba(0, 0, 0, 0.9), 0 0 10px rgba(0, 0, 0, 0.7);
 
 			strong {
 				@include vendor('transition', (
