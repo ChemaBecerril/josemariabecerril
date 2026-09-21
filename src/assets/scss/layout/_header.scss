@@ -30,11 +30,13 @@
 
 		.logo {
 			border: 0;
+			color: _palette(fg);
 			display: inline-block;
 			font-size: 0.8em;
 			height: inherit;
 			line-height: inherit;
 			padding: 0 1.5em;
+			text-shadow: 0 1px 6px rgba(0, 0, 0, 0.5);
 
 			strong {
 				@include vendor('transition', (
@@ -42,11 +44,12 @@
 					'color #{_duration(transition)} ease-in-out'
 				));
 				background-color: _palette(fg-bold);
-				color: _palette(bg);
+				color: _palette(bg-alt);
 				display: inline-block;
 				line-height: 1.65em;
 				margin-right: 0.325em;
 				padding: 0 0.125em 0 (_font(letter-spacing-alt) + 0.125em);
+				text-shadow: none;
 			}
 
 			&:hover {
