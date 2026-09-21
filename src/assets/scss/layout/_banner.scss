@@ -26,6 +26,10 @@
 
 		&.articles{
 			@include vendor('background-image', 'url("../images/articles.jpg")');
+
+			&:after {
+				opacity: 0.92;
+			}
 		}
 
 		&:after {
@@ -45,7 +49,9 @@
 		}
 
 		h1 {
+			color: _palette(fg-bold);
 			font-size: 3.25em;
+			text-shadow: 0 2px 12px rgba(0, 0, 0, 0.6);
 		}
 
 		> .inner {
@@ -90,9 +96,11 @@
 				}
 
 				p {
+					color: _palette(fg);
 					font-size: 0.7em;
 					font-weight: _font(weight-bold);
 					letter-spacing: _font(letter-spacing-alt);
+					text-shadow: 0 1px 8px rgba(0, 0, 0, 0.6);
 					text-transform: uppercase;
 				}
 			}
