@@ -23,4 +23,22 @@
 			background-color: transparent;
 			border-bottom: solid 1px _palette(border);
 		}
+
+		&.articles {
+			@include vendor('background-image', (
+				'linear-gradient(#{transparentize(_palette(bg-alt), 0.12)}, #{transparentize(_palette(bg-alt), 0.12)})',
+				'url("../images/articles.jpg")'
+			));
+			background-attachment: fixed;
+			background-position: center;
+			background-repeat: no-repeat;
+			background-size: cover;
+			color: _palette(fg);
+			padding: 2em;
+			text-shadow: 0 1px 6px rgba(0, 0, 0, 0.5);
+
+			@include breakpoint(large) {
+				background-attachment: scroll;
+			}
+		}
 	}
