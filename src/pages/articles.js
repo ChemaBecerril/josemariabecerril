@@ -58,6 +58,17 @@ const Landing = (props) => (
                     <li>
                         <div className="inner">
                             <header className="major">
+                                <h3>Cubing timber to preserve the common forest? The ordinary policy of producing ecological numbers in the Mayan forests of Mexico</h3>
+                            </header>
+                            <p>In the tropical forests of Quintana Roo, Mexico, Yucatec Maya men measure felled logs using forest compasses and geometric formulas taught by engineers. This article examines how quantification techniques – originally introduced as part of sustainable forest management policies – are appropriated, contested, and repurposed within ejido communities. Based on ethnographic and historical research on timber volume measurement, it analyzes the tensions between ecological mandates, market logics, and Indigenous struggles, showing how numbers function both as instruments of remote governance and as tools of political regulation. Far from being neutral devices, forest measurements act as operations of translation and valuation, embedding community-based resource management actors in differentiated modes of engagement with their environment and their social partners. The article thus offers a situated account of ecological numbers at the intersection of STS, the anthropology of quantification, and knowledge politics in postcolonial settings.</p>
+                            <ul className="actions">
+                                <li><Link to="https://journals.openedition.org/statsoc/4693" className="button">Read more</Link></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <div className="inner">
+                            <header className="major">
                                 <h3>Disappearing in the Mesh of the State:</h3>
                                 <h4>The Erasure of Corpses’ Identities in Mexico City’s Forensic Government of the Dead</h4>
                             </header>
