@@ -13,12 +13,6 @@ const Landing = (props) => (
                 body, h1, h2, h3, h4, h5, h6, p, a, div, span, ul, li {
                     font-family: 'Helvetica', sans-serif;
                     text-align: left;
-                    color: #000; /* Default text color */
-                }
-                #main {
-                    background: url('/path/to/articles.jpg') no-repeat center center fixed; 
-                    background-size: cover;
-                    padding: 2em;
                 }
                 .content {
                     background: transparent;
@@ -55,7 +49,7 @@ const Landing = (props) => (
 
         <BannerArticles />
 
-        <div id="main">
+        <div id="main" className="articles">
             <section id="one" className="spotlights">
                 <header className="major">
                     <h2>Research Articles</h2>
