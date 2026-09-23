@@ -24,7 +24,7 @@
 			border-bottom: solid 1px _palette(border);
 		}
 
-		&.articles {
+		&.articles, &.teaching {
 			@include vendor('background-image', (
 				'linear-gradient(#{transparentize(_palette(bg-alt), 0.12)}, #{transparentize(_palette(bg-alt), 0.12)})',
 				'url("../images/articles.jpg")'
@@ -40,5 +40,12 @@
 			@include breakpoint(large) {
 				background-attachment: scroll;
 			}
+		}
+
+		&.teaching {
+			@include vendor('background-image', (
+				'linear-gradient(#{transparentize(_palette(bg-alt), 0.12)}, #{transparentize(_palette(bg-alt), 0.12)})',
+				'url("../images/Teaching.jpg")'
+			));
 		}
 	}

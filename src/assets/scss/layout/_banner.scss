@@ -32,6 +32,14 @@
 			}
 		}
 
+		&.teaching{
+			@include vendor('background-image', 'url("../images/Teaching.jpg")');
+
+			&:after {
+				opacity: 0.92;
+			}
+		}
+
 		&:after {
 			@include vendor('transition', 'opacity #{_duration(banner)} ease');
 			@include vendor('transition-delay', '0.75s');
