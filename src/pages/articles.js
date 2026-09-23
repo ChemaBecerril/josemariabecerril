@@ -110,6 +110,17 @@ const Landing = (props) => (
                     <li>
                         <div className="inner">
                             <header className="major">
+                                <h3>Review for Journal de la Société des Américanistes</h3>
+                                <h4>Montañas que danzan. Laboratorios maseual para el mantenimiento del mundo [Dancing Mountains. Maseual Laboratories for the Maintenance of the World] By Alessandro Questa. Buenos Aires: Sb editorial, 2023. 208 pp.</h4>
+                            </header>
+                            <ul className="actions">
+                                <li><Link to="https://journals.openedition.org/jsa/25879" className="button">Read more</Link></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <div className="inner">
+                            <header className="major">
                                 <h3>Review for American Ethnologist</h3>
                                 <h4>L’aube s'est levée sur un mort: Violence armée et culture du pavot au Mexique [Dawn rose on a dead man: Armed violence and poppy cultivation in Mexico] By Adèle Blazquez. Paris: CNRS Éditions, 2022. 334 pp.</h4>
                             </header>
