@@ -59,8 +59,10 @@ const Teaching = (props) => (
         <div id="main" className="teaching">
             <section id="one" className="spotlights">
                 <header className="major">
-                    <h2>Teaching Experience</h2>
+                    <h2>Teaching</h2>
                 </header>
+                <p>Anthropology, as a social science built around multicultural and multinatural encounters, offers the capacity to think outside the box. It provides other scientific and technical disciplines with empirical tools to question one’s own convictions, situate them in relation to others, and build fruitful dialogue. My main teaching goal is to accompany students in discovering how sociotechnical systems, ecologies, power, and economies are intertwined.</p>
+                <p>Below, you can find a list of classes I have taught or am currently teaching. Please contact me if you are interested in discussing or exchanging ideas about the content of any of these classes.</p>
                 <ul className="content">
                     <li>
                         <div className="inner">
