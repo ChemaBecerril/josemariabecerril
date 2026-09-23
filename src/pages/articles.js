@@ -147,6 +147,17 @@ const Landing = (props) => (
                     <li>
                         <div className="inner">
                             <header className="major">
+                                <h3>Beyond the Jungle: Maya Forest Ejidos in the Way of the Maya Train</h3>
+                            </header>
+                            <p>Maya ejidos’ responses to the Tren Maya must be understood through their histories of market engagement, forest commodification, land privatization, and internal struggles over territorial control and economic benefits.</p>
+                            <ul className="actions">
+                                <li><Link to="https://medioambiente.nexos.com.mx/mas-alla-de-la-selva-los-ejidos-forestales-mayas-ante-el-tren-maya/" className="button">Read more</Link></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <div className="inner">
+                            <header className="major">
                                 <h3>The Sharing Economy Comes to Mexico</h3>
                             </header>
                             <p>Mexico's neoliberal reforms have created fertile ground for exploitative "sharing-economy" apps to grow.</p>
