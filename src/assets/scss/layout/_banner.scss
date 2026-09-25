@@ -32,6 +32,14 @@
 			}
 		}
 
+		&.fieldwork{
+			@include vendor('background-image', 'url("../images/fieldwork.jpg")');
+
+			&:after {
+				opacity: 0.92;
+			}
+		}
+
 		&.teaching{
 			@include vendor('background-image', 'url("../images/Teaching.jpg")');
 
