@@ -1,0 +1,271 @@
+/* Fragments (Fieldwork archive) */
+
+	.fragments-intro {
+		max-width: 40em;
+		margin-bottom: (_size(element-margin) * 2.5);
+	}
+
+	.fragments {
+		position: relative;
+		padding-right: 4em;
+	}
+
+	.fragment {
+		display: grid;
+		grid-template-columns: minmax(0, 7fr) minmax(0, 4fr);
+		grid-template-areas: 'media caption';
+		column-gap: 3em;
+		align-items: start;
+		margin: 0 0 (_size(element-margin) * 4) 0;
+		scroll-margin-top: 4em;
+
+		&:last-child {
+			margin-bottom: (_size(element-margin) * 1.5);
+		}
+
+		&.fragment-right {
+			grid-template-columns: minmax(0, 4fr) minmax(0, 7fr);
+			grid-template-areas: 'caption media';
+
+			.fragment-media {
+				@include vendor('justify-content', 'flex-start');
+			}
+		}
+
+		&.fragment-wide {
+			grid-template-columns: minmax(0, 1fr);
+			grid-template-areas: 'media' 'caption';
+
+			.fragment-media {
+				@include vendor('justify-content', 'center');
+			}
+
+			.fragment-caption {
+				position: static;
+				max-width: 40em;
+				padding-top: 1.5em;
+			}
+		}
+	}
+
+	.fragment-media {
+		grid-area: media;
+		@include vendor('display', 'flex');
+		@include vendor('justify-content', 'flex-end');
+
+		img, video {
+			display: block;
+			height: auto;
+			max-height: 85vh;
+			max-width: 100%;
+			width: auto;
+			box-shadow: 0 1em 3em rgba(0, 0, 0, 0.35);
+		}
+
+		video {
+			width: 100%;
+			background: rgba(0, 0, 0, 0.35);
+		}
+	}
+
+	.fragment-embed {
+		position: relative;
+		width: 100%;
+		padding-top: 56.25%;
+		box-shadow: 0 1em 3em rgba(0, 0, 0, 0.35);
+
+		iframe {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			border: 0;
+		}
+	}
+
+	.fragment-caption {
+		grid-area: caption;
+		position: sticky;
+		top: 5em;
+		padding-top: 0.5em;
+		font-size: 0.9em;
+
+		h3 {
+			margin-bottom: 0.75em;
+		}
+
+		p {
+			margin-bottom: 1em;
+		}
+
+		.fragment-number {
+			display: block;
+			font-size: 0.8em;
+			font-weight: _font(weight-bold);
+			letter-spacing: _font(letter-spacing-alt);
+			margin-bottom: 0.75em;
+
+			&:after {
+				content: '';
+				display: block;
+				width: 3em;
+				height: 2px;
+				margin-top: 0.75em;
+				background-color: _palette(fg-bold);
+			}
+		}
+
+		.fragment-meta {
+			font-size: 0.7em;
+			font-weight: _font(weight-bold);
+			letter-spacing: _font(letter-spacing-alt);
+			text-transform: uppercase;
+			margin-bottom: 0.5em;
+		}
+
+		.fragment-credit {
+			font-size: 0.75em;
+			font-style: italic;
+			opacity: 0.75;
+		}
+	}
+
+	// Reveal on scroll. Only applied once the script has run (.is-ready),
+	// so the content stays visible without JavaScript.
+	.fragments.is-ready .fragment {
+		.fragment-media, .fragment-caption {
+			@include vendor('transition', (
+				'opacity 1.5s ease',
+				'transform 0.75s ease-out',
+				'filter 0.75s ease',
+				'-webkit-filter 0.75s ease'
+			));
+			@include vendor('filter', 'blur(0.125em)');
+			opacity: 0;
+		}
+
+		.fragment-media {
+			@include vendor('transform', 'translateY(1.5em)');
+		}
+
+		.fragment-caption {
+			@include vendor('transform', 'translateX(-0.5em)');
+			@include vendor('transition-delay', '0.25s');
+		}
+
+		&.is-visible {
+			.fragment-media, .fragment-caption {
+				@include vendor('filter', 'none');
+				@include vendor('transform', 'none');
+				opacity: 1;
+			}
+		}
+	}
+
+	// Numbered index, fixed on the right while the archive is on screen.
+	.fragments-index {
+		position: fixed;
+		right: 1.5em;
+		top: 50%;
+		z-index: 2;
+		@include vendor('transform', 'translateY(-50%)');
+		@include vendor('transition', 'opacity 0.5s ease');
+		@include vendor('pointer-events', 'none');
+		opacity: 0;
+		text-align: right;
+
+		&.is-visible {
+			@include vendor('pointer-events', 'auto');
+			opacity: 1;
+		}
+
+		ol {
+			list-style: none;
+			margin: 0 0 1em 0;
+			padding: 0;
+		}
+
+		li {
+			padding: 0;
+			margin: 0;
+			line-height: 1.9;
+		}
+
+		a {
+			border-bottom: 0;
+			font-size: 0.6em;
+			font-weight: _font(weight-bold);
+			letter-spacing: _font(letter-spacing-alt);
+			opacity: 0.45;
+			@include vendor('transition', 'opacity 0.3s ease');
+
+			&:hover {
+				opacity: 1;
+			}
+		}
+
+		li.is-active a {
+			opacity: 1;
+
+			&:before {
+				content: '';
+				display: inline-block;
+				vertical-align: middle;
+				width: 1.5em;
+				height: 1px;
+				margin-right: 0.75em;
+				background-color: _palette(fg-bold);
+			}
+		}
+
+		.fragments-count {
+			display: block;
+			font-size: 0.6em;
+			letter-spacing: _font(letter-spacing-alt);
+			opacity: 0.75;
+		}
+	}
+
+	@include breakpoint(large) {
+		.fragments-index {
+			right: 0.75em;
+		}
+	}
+
+	@include breakpoint(medium) {
+		.fragment,
+		.fragment.fragment-right {
+			grid-template-columns: minmax(0, 1fr);
+			grid-template-areas: 'media' 'caption';
+			margin-bottom: (_size(element-margin) * 3);
+
+			.fragment-media {
+				@include vendor('justify-content', 'center');
+			}
+
+			.fragment-caption {
+				position: static;
+				padding-top: 1.5em;
+			}
+		}
+
+		.fragments {
+			padding-right: 0;
+		}
+
+		.fragments-index {
+			display: none;
+		}
+	}
+
+	@media (prefers-reduced-motion: reduce) {
+		.fragments.is-ready .fragment {
+			.fragment-media, .fragment-caption {
+				@include vendor('transition', 'none');
+				@include vendor('filter', 'none');
+				@include vendor('transform', 'none');
+				opacity: 1;
+			}
+		}
+	}

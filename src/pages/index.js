@@ -48,7 +48,7 @@ class HomeIndex extends React.Component {
                                 <h3>Fieldwork</h3>
                                 <p>Brief overview of my research</p>
                             </header>
-                            <Link to="/" className="link primary"></Link>
+                            <Link to="/fieldwork" className="link primary"></Link>
                         </article>
                         <article style={{backgroundImage: `url(${events})`}}>
                             <header className="major" style={{fontFamily: 'Helvetica, Arial, sans-serif'}}>
