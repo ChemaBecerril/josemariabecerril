@@ -7,6 +7,13 @@ import { withPrefix } from 'gatsby'
 
 const pad = (n) => String(n).padStart(2, '0')
 
+// Turns [words](https://...) inside a text into a link opening in a new tab.
+const withLinks = (text) =>
+    text.split(/(\[[^\]]+\]\([^)\s]+\))/g).map((part, i) => {
+        const m = part.match(/^\[([^\]]+)\]\(([^)\s]+)\)$/)
+        return m ? <a key={i} href={m[2]} target="_blank" rel="noopener noreferrer">{m[1]}</a> : part
+    })
+
 const resolveSrc = (src) =>
     !src ? '' : /^(https?:)?\/\//.test(src) ? src : withPrefix(`/fieldwork/${src}`)
 
@@ -56,7 +63,7 @@ const Fragment = ({ item, index }) => {
                 <span className="fragment-number">{pad(index + 1)}</span>
                 {meta.length > 0 && <p className="fragment-meta">{meta.join(' · ')}</p>}
                 {item.title && <h3>{item.title}</h3>}
-                {paragraphs.map((p, i) => <p key={i}>{p}</p>)}
+                {paragraphs.map((p, i) => <p key={i}>{withLinks(p)}</p>)}
                 {item.credit && <p className="fragment-credit">{item.credit}</p>}
             </div>
         </article>

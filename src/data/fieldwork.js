@@ -18,18 +18,19 @@
 //   title     (optional) short title
 //   date      (optional) free text, e.g. 'March 2023' or '2022–2023'
 //   location  (optional) free text
-//   text      a string, or a list of strings for several paragraphs
+//   text      a string, or a list of strings for several paragraphs.
+//             Links: write [words to link](https://address) inside the text.
 //   credit    (optional) photo/video credit line
 
 const fieldwork = [
     {
         type: 'image',
-        src: 'placeholder-01.jpg',
-        alt: 'Placeholder image',
-        title: 'Placeholder title',
-        date: 'Month Year',
-        location: 'Place, region',
-        text: 'Placeholder text. Two or three sentences situating what the image shows: the moment, the people or beings involved, the technique or gesture at stake, and why it matters for the research.',
+        src: '2016-juarez-santa-mari-la-juaricua.jpg',
+        alt: 'Poster calling for a pilgrimage of Santa Mari La Juaricua, Saturday 11 March, from the Fuente de la Cibeles in Colonia Roma to Plaza Giordano Bruno in Colonia Juárez',
+        title: 'Call for a pilgrimage against gentrification',
+        date: '2016',
+        location: 'Mexico City',
+        text: 'Under the supervision of [Nitzan Shoshan](https://ces.colmex.mx/personal-academico/shoshan-nitzan/semblanza), I conducted my first experience of ethnographic fieldwork and qualitative research for my bachelor’s thesis on the [gentrification of the Juárez neighbourhood](https://hdl.handle.net/20.500.11986/COLMEX/10004422) in central Mexico City. I spent around a year walking the streets, speaking with residents, interviewing architects and investors, and assisting grassroots initiatives opposing gentrification, or “whitening,” as activists called the process, highlighting the intertwinement of race, aesthetics, and renovation. This first experience sharpened my attention to questions of temporality, expectations, possibility, and deception, particularly in relation to the ways technology and the built environment can enforce segregation while commodifying land through imagined timescapes.',
     },
     {
         type: 'image',
